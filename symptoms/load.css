@@ -37,7 +37,6 @@ body {
 header {
   text-align: center;
   top: -22px;
-  left: 7px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: fixed;
@@ -50,15 +49,28 @@ header {
   padding-bottom: 150px;
 }
 
+/* @media screen and (max-width: 992px) {
+  header {
+      padding: 20px;
+  }
+} */
+
 .responsive {
   width: 100%;
-  max-width: 1830px;
+  max-width: 1700px;
   height: auto;
   padding: 20px;
   background-color: rgba(206, 59, 149, 0.3);
   box-shadow: 0 0 200px rgba(206, 59, 149, 0.7);
   border-radius: 20px;
   margin-top: 40px;
+  /* margin-left: -20px; */
+}
+
+@media screen and (max-width: 1800px) {
+  .responsive {
+        max-width: 90%;
+  }
 }
 
 section {
@@ -68,9 +80,27 @@ section {
   max-width: 80vw;
 }
 
+
+@media screen and (min-width: 1801px) and (max-width: 2500px) {
+  section {
+    padding-left: 270px;
+    max-width: 2000px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  section {
+    padding-left: 0px;
+    max-width: 500px;
+  }
+}
+
 .array {
   margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 h1 {
   font-family: 'Inconsolata', monospace;
@@ -78,6 +108,14 @@ h1 {
   font-size: 2.5em;
   text-shadow: 0 0 10px #ce3895, 0 0 20px #0000FF;
   margin-top: -10px;
+  margin-left: auto;
+      margin-right: auto;
+}
+
+@media screen and (max-width: 1800px) {
+h1 {
+        max-width: 90%;
+  }
 }
 
 h2 {
@@ -87,6 +125,14 @@ h2 {
   text-shadow: 0 0 10px #51acd1, 0 0 20px #51acd1;
   font-size: 2.25em;
   margin-top: -10px;
+    margin-left: auto;
+      margin-right: auto;
+}
+
+@media screen and (max-width: 1800px) {
+  h2 {
+        max-width: 90%;
+  }
 }
 
 canvas {
@@ -94,6 +140,15 @@ canvas {
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1800px) {
+  canvas {
+      margin-left: 0px;
+        margin-right: 0px;
+          margin-top: 82px;
+  }
+}
+
 
 #canvascontainer {}
 
