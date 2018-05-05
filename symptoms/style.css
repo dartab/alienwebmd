@@ -82,11 +82,11 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
   font-family: 'Inconsolata', monospace;
   color: #e9ef81;
   text-shadow: 0 0 10px #51acd1, 0 0 20px #51acd1;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 700px;
@@ -94,7 +94,7 @@ h2 {
 }
 
 canvas {
-  margin-top: 10px;
+  margin-top: 0px;
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
   border-radius: 10px;
 }
@@ -117,7 +117,7 @@ button#clearButton {
   width: 48%;
   background-color: #fff;
   padding: 14px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -136,7 +136,7 @@ button#saveButton {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 button#clearButton:hover {
