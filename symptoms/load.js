@@ -163,7 +163,7 @@ var t = function(p) {
   var drawing = [];
 
   p.setup = function() {
-    canvas = p.createCanvas(400, 400);
+    canvas = p.createCanvas(500,500);
     // canvas.parent('canvascontainer');
   }
 
@@ -270,3 +270,50 @@ function showDrawing(key) {
 function errData(err) {
   console.log(err);
 }
+
+
+//back to top
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+//
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         document.getElementById("myBtn").style.display = "block";
+//     } else {
+//         document.getElementById("myBtn").style.display = "none";
+//     }
+// }
+
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+
+
+// scroll down
+// function scrollWin() {
+//     window.scrollBy(0, 1250);
+// }
+
+
+/** Scroll to top button implementation in vanilla JavaScript (ES6 - ECMAScript 6) **/
+
+let intervalId = 0; // Needed to cancel the scrolling when we're at the top of the page
+const $scrollButton = document.querySelector('.scroll'); // Reference to our scroll button
+
+function scrollStep() {
+    // Check if we're at the top already. If so, stop scrolling by clearing the interval
+    if (window.pageYOffset === 0) {
+        clearInterval(intervalId);
+    }
+    window.scroll(0, window.pageYOffset - 100);
+}
+
+function scrollToTop() {
+    // Call the function scrollStep() every 16.66 millisecons
+    intervalId = setInterval(scrollStep, 16.66);
+}
+
+// When the DOM is loaded, this click handler is added to our scroll button
+$scrollButton.addEventListener('click', scrollToTop);

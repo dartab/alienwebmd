@@ -31,7 +31,7 @@ var s = function(p) {
   var isDrawing = false;
 
   p.setup = function() {
-    canvas = p.createCanvas(370, 370);
+    canvas = p.createCanvas(500, 500);
 
     canvas.mousePressed(p.startPath);
     canvas.parent('canvascontainer');
