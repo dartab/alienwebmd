@@ -6,7 +6,7 @@ html {
 
 body {
   background-image: url("images/flower.png");
-  background-position: center center;
+  background-position: left top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -14,13 +14,20 @@ body {
   scroll-behavior: smooth
 }
 
+.headerimg {
+  background-image: url("images/board_title_top.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+}
+
 .weave {
   content: "";
   background: url("images/weave.gif");
   background-repeat: repeat;
   opacity: 0.5;
-  top: 0;
-  left: 0;
+  top: -30px;
+  left: -3px;
   bottom: 0;
   right: 0;
   position: fixed;
@@ -29,8 +36,18 @@ body {
 
 header {
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  top: -22px;
+  left: 7px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  width: 100%;
+  background-image: url("images/board_title_top.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat;
+  margin-left: -8px;
+  margin-top: -8px;
+  padding-top: 30px;
+  padding-bottom: 150px;
 }
 
 .responsive {
@@ -41,12 +58,18 @@ header {
   background-color: rgba(206, 59, 149, 0.3);
   box-shadow: 0 0 200px rgba(206, 59, 149, 0.7);
   border-radius: 20px;
+  margin-top: 40px;
 }
 
 section {
-  margin: auto;
-  padding-left: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 52px;
   max-width: 80vw;
+}
+
+.array {
+  margin-top: 300px;
 }
 
 h1 {
@@ -54,6 +77,7 @@ h1 {
   color: #fff;
   font-size: 2.5em;
   text-shadow: 0 0 10px #ce3895, 0 0 20px #0000FF;
+  margin-top: -10px;
 }
 
 h2 {
@@ -62,6 +86,7 @@ h2 {
   font-style: italic;
   text-shadow: 0 0 10px #51acd1, 0 0 20px #51acd1;
   font-size: 2.25em;
+  margin-top: -10px;
 }
 
 canvas {
@@ -72,62 +97,35 @@ canvas {
 
 #canvascontainer {}
 
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-
-  #myBtn:hover {
-    background-color: #555;
-  }
-
-/* button {
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-} */
-
-
-.scroll{
-  opacity: 0.5;
-  background-color: black;
+.scroll {
+  background-color: rgba(228, 97, 178, .7);
   width: 80px;
-  height: 80px;
+  height: 90px;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  border-radius: 5px;
+  bottom: 148px;
+  right: 124px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 0 30px rgba(87, 234, 206, 0.9);
 }
 
-.fas{
-  color: white;
+.fas {
+  color: #e9ef81;
   margin-top: 0px;
-  margin-left:0px;
-font-size: 50px;}
+  margin-left: 0px;
+  font-size: 50px;
+  opacity: 1;
+    cursor: pointer;
+}
 
-
-
+.top {
+  font-family: 'Inconsolata', monospace;
+  color: #e9ef81;
+  font-size: 2em;
+  text-shadow: 0 0 10px #ce3895, 0 0 20px #0000FF;
+  margin-top: 0px;
+    cursor: pointer;
+}
 
 /* note that a gap appears in between the canvas elements since they are inline replaced elements */

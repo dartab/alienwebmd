@@ -72,12 +72,16 @@ h1 {
   font-family: 'Inconsolata', monospace;
   color: #fff;
   text-shadow: 0 0 10px #ce3895, 0 0 20px #0000FF;
-  font-size: 2em;
-  width: 500px;
-  margin: auto;
+  font-size: 30px;
+  line-height: 42px;
+  width: 700px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: -13px;
 }
 
 canvas {
+  margin-top: 10px;
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
   border-radius: 10px;
 }
