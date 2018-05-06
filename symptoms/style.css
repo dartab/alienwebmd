@@ -6,11 +6,6 @@ html {
   overflow: hidden;
 }
 
-/* @media only screen and (max-width: 900px) and (min-height: 700px) {
-    html {
-        overflow: hidden;
-    }
-} */
 
 body {
   width: 100%;
@@ -39,6 +34,7 @@ body {
   right: 0;
   position: absolute;
   z-index: -1;
+
 }
 
 /* @media only screen and (max-width: 900px) and (min-height: 700px) {
@@ -51,6 +47,8 @@ header {
   text-align: center;
   margin: 3rem;
 }
+
+
 
 @media screen and (max-width: 500px) {
   header {
@@ -69,11 +67,20 @@ header {
   border-radius: 20px;
 }
 
+@media screen and (max-height: 1500px) and (min-width: 1000px){
+  .responsive {
+    max-width: 500px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   header {
     max-width: 400px;
   }
 }
+
 
 section {
   margin-left: auto;
@@ -109,6 +116,14 @@ h1 {
   margin-top: 0px;
     width: 90%;
     line-height: 21px;
+  }
+}
+
+@media screen and (max-height: 1500px) and (min-width: 1000px){
+  h1 {
+    max-width: 1500px;
+    font-size:18.5px;
+    margin-bottom: -20px;
   }
 }
 
