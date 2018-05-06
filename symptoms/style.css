@@ -140,6 +140,12 @@ h2 {
   }
 }
 
+@media screen and (max-width: 400px) {
+  h2 {
+color: transparent;
+  text-shadow: none;}
+}
+
 canvas {
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
   border-radius: 10px;
