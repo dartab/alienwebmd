@@ -156,12 +156,11 @@ canvas {
 
 #canvascontainer {
   margin: auto;
-
 }
 
 @media screen and (max-width: 500px) {
   #canvascontainer {
-  zoom: 70%;
+  /* zoom: 70%; */
   }
 }
 

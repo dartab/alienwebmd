@@ -183,7 +183,7 @@ var t = function(p) {
   var drawing = [];
 
   p.setup = function() {
-    canvas = p.createCanvas(200, 200);
+    canvas = p.createCanvas(500, 500);
     canvas.parent('canvascontainer');
   }
 
