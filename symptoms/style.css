@@ -135,17 +135,19 @@ h2 {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 501px) and (max-width:730px) {
 h2 {
-  font-size: 18px;
+  max-width: 500px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  h2 {
-        max-width: 90%;
+h2 {
+  /* font-size: 18px; */
+  max-width: 350px;
   }
 }
+
 
 canvas {
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
