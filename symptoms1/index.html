@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=.5">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="draw.js"></script>
+  <title>Late Captialism Symtoms</title>
+
+  <script type="text/javascript">
+
+    if (screen.width <= 699) {
+      document.location = "mobile/mobile.html";
+    }
+    if ((navigator.userAgent.match(/iPad/i))) {
+       location.replace("mobile/index.html");
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <div class="stripes">
+  </div>
+
+  <header><img class="responsive" src="images/draw_title.png" alt="title">
+    <h1>What do you experience in late capitalism? Illustrate your symptoms below.</h1>
+  </header>
+  <div id="versions"><a href="tablet.html">FOR TABLET</a> <i class="fas fa-barcode"></i></i> <a href="mobile.html">FOR MOBILE</a></div>
+  <section>
+    <div id="canvascontainer"></div>
+    <button id="clearButton">Clear</button>
+    <button id="saveButton">Post*</button>
+  </section>
+  <h2>*Your drawing will be added to the top of the Symptoms Board.</h2>
+</body>
+
+
+
+</html>
