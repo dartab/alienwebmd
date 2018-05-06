@@ -43,7 +43,8 @@ header {
 }
 
 .responsive {
-  width: 750px;
+  /* width: 750px; */
+  width: 740px;
   padding: 20px;
   margin-left: auto;
   margin-top: 70px;
@@ -70,8 +71,8 @@ h1 {
   font-family: 'Inconsolata', monospace;
   color: #fff;
   text-shadow: 0 0 10px #ce3895, 0 0 20px #0000FF;
-  font-size: 50px;
-  line-height: 70px;
+  font-size: 44px;
+  line-height: 64px;
   width: 700px;
   margin-right: auto;
   margin-left: auto;
