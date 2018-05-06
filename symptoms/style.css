@@ -122,7 +122,7 @@ h1 {
 @media screen and (max-height: 1500px) and (min-width: 1000px){
   h1 {
     max-width: 1500px;
-    font-size:18.5px;
+    font-size:18px;
     margin-bottom: -20px;
   }
 }
