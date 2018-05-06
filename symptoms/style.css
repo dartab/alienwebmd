@@ -48,7 +48,7 @@ header {
 
 /* laptop */
 
-@media screen and (max-height: 900px) and (min-width: 1000px) {
+@media screen and (max-height: 900px) {
   .responsive {
     max-width: 500px;
     margin-top: -40px;
@@ -98,7 +98,7 @@ h1 {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 20px;
     width: 90%;
     line-height: 21px;
   }
@@ -106,11 +106,11 @@ h1 {
 
 /* laptop */
 
-@media screen and (max-height: 900px) and (min-width: 1000px) {
+@media screen and (max-height: 900px) {
   h1 {
     max-width: 1500px;
     font-size: 18px;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
   }
 }
 
@@ -120,7 +120,6 @@ h1 {
   h1 {
     font-size: 20px;
     margin-left: 0;
-    margin-top: 0px;
     width: 90%;
     line-height: 21px;
   }
@@ -142,6 +141,14 @@ h2 {
 @media screen and (min-width: 501px) and (max-width: 730px) {
   h2 {
     max-width: 500px;
+  }
+}
+
+/* laptop */
+
+@media screen and (max-height: 900px) {
+  h2 {
+    margin-top: 10px;
   }
 }
 
@@ -182,7 +189,7 @@ button#saveButton:hover {
 
 button#clearButton {
   float: left;
-  margin-top: 20px;
+  margin-top: -10px;
   color: #6e4677;
   width: 48%;
   background-color: #fff;
@@ -194,9 +201,24 @@ button#clearButton {
   cursor: pointer;
 }
 
+/* laptop */
+
+@media screen and (max-height: 900px) {
+button#clearButton {
+  margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+button#clearButton {
+    margin-top: 20px;
+  }
+}
+
+
 button#saveButton {
   float: right;
-  margin-top: 20px;
+  margin-top: -10px;
   width: 48%;
   background-color: #ad60bd;
   color: #fff;
@@ -209,6 +231,22 @@ button#saveButton {
   margin-bottom: 30px;
 }
 
+/* laptop */
+
+@media screen and (max-height: 900px) {
+button#saveButton {
+  margin-bottom: 10px;
+  }
+}
+
+/* smaller screen */
+
+@media screen and (max-width: 500px) {
+button#saveButton {
+    margin-top: 20px;
+  }
+}
+
 button#clearButton:hover {
   background-color: #f2d7f9;
   color: #6e4677;
@@ -216,8 +254,6 @@ button#clearButton:hover {
 
 #versions {
   z-index: 2000;
-  /* bottom: 0;
-  right: 3%; */
   color: white;
   font-family: 'Inconsolata', monospace;
   background-color: rgba(228, 97, 178, .7);
@@ -225,25 +261,24 @@ button#clearButton:hover {
   padding-top: .5rem;
   padding-bottom: .5rem;
   border-radius: 0px 0px 5px 5px;
-
   position: fixed;
-      top: 0;
-      bottom: 0;
-      height: 1.2em;
-      padding-left: .75rem;
-      padding-right: .75rem;
-      margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1.2em;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin: auto;
   right: 0;
-    -webkit-transform-origin: 100% 50%;
-       -moz-transform-origin: 100% 50%;
-        -ms-transform-origin: 100% 50%;
-         -o-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: rotate(90deg) translate(50%, 50%);
-       -moz-transform: rotate(90deg) translate(50%, 50%);
-        -ms-transform: rotate(90deg) translate(50%, 50%);
-         -o-transform: rotate(90deg) translate(50%, 50%);
-            transform: rotate(90deg) translate(50%, 50%);
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: rotate(90deg) translate(50%, 50%);
+  -moz-transform: rotate(90deg) translate(50%, 50%);
+  -ms-transform: rotate(90deg) translate(50%, 50%);
+  -o-transform: rotate(90deg) translate(50%, 50%);
+  transform: rotate(90deg) translate(50%, 50%);
 }
 
 #versions a {

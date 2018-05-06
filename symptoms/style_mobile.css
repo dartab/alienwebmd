@@ -106,7 +106,7 @@ button#saveButton:hover {
 
 button#clearButton {
   float: left;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #6e4677;
   width: 48%;
   background-color: #fff;
@@ -120,7 +120,7 @@ button#clearButton {
 
 button#saveButton {
   float: right;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 48%;
   background-color: #ad60bd;
   color: #fff;

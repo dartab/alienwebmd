@@ -1,10 +1,6 @@
-/* how to prevent scrollbar? maybe only on FF */
-
 html {
   margin: auto;
   height: 100%;
-  /* overflow: scroll; */
-
   overflow: hidden;
 }
 
@@ -15,14 +11,9 @@ body {
   position: fixed;
   margin: 0;
   padding: 0;
-  /* overflow: scroll; */
   overflow: hidden;
   background-image: url("images/blue.png");
   background-repeat: repeat;
-  /* background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   background-color: #464646;
 }
 
@@ -198,12 +189,12 @@ button#saveButton:hover {
 
 button#clearButton {
   float: left;
-  margin-top: 20px;
+  margin-top: 0px;
   color: #6e4677;
   width: 48%;
   background-color: #fff;
   padding: 14px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -219,7 +210,7 @@ button#clearButton {
 
 button#saveButton {
   float: right;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 48%;
   background-color: #ad60bd;
   color: #fff;
@@ -229,7 +220,7 @@ button#saveButton {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 500px) {
