@@ -51,6 +51,12 @@ header {
   margin: 3rem;
 }
 
+@media screen and (max-width: 500px) {
+  header {
+      margin: 1rem;
+  }
+}
+
 .responsive {
   width: 100%;
   max-width: 900px;
@@ -66,6 +72,13 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
+  width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+      margin-left: 12.5px;
+  }
 }
 
 h1 {
@@ -81,6 +94,28 @@ h1 {
 
 }
 
+@media screen and (max-width: 500px) {
+h1 {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+    width: 90%;
+    line-height: 21px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 766px){
+h1 {
+  font-size: 20px;
+  margin-left: 0;
+  margin-top: 0px;
+    width: 90%;
+    line-height: 21px;
+  }
+}
+
+
 h2 {
   text-align: center;
   font-family: 'Inconsolata', monospace;
@@ -93,13 +128,41 @@ h2 {
 
 }
 
+@media screen and (max-width: 500px) {
+h2 {
+  font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+        max-width: 90%;
+  }
+}
+
 canvas {
   box-shadow: 0 0 200px rgba(87, 234, 206, 0.8);
   border-radius: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  canvas {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+
 #canvascontainer {
   margin: auto;
+
+}
+
+@media screen and (max-width: 500px) {
+  #canvascontainer {
+  zoom: 70%;
+  }
 }
 
 
@@ -123,6 +186,13 @@ button#clearButton {
   cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+  button#clearButton {
+  margin-bottom: 20px;
+
+  }
+}
+
 button#saveButton {
   float: right;
   margin-top: 20px;
@@ -136,6 +206,13 @@ button#saveButton {
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  button#saveButton {
+  margin-bottom: 20px;
+
+  }
 }
 
 button#clearButton:hover {
