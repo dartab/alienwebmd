@@ -16,6 +16,14 @@ var config = {
 firebase.initializeApp(config);
 database = firebase.database();
 
+
+document.addEventListener('touchstart', function(event) {
+  event.preventDefault();
+  // event.stopPropagation();
+},
+{passive: false}
+);
+
 // empty canvas in which to draw
 var s = function(p) {
   var drawing = [];
@@ -28,6 +36,11 @@ var s = function(p) {
     canvas.mousePressed(p.startPath);
     canvas.parent('canvascontainer');
     canvas.mouseReleased(endPath);
+
+    canvas.touchMoved( function() {
+      // console.log("touchmoved");
+      return false; // may not be necessary but probably won't hurt, consider on body or window?
+    });
 
     var saveButton = p.select('#saveButton');
     saveButton.mousePressed(p.saveDrawing);
