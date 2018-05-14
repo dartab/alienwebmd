@@ -14,22 +14,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.headerimg {
-  background-image: url("images/board_title_top.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left top;
-}
-
-@media screen and (max-height: 900px) {
-.headerimg {
-  background-image: url("images/board_title_top_shorter.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left top;
-  }
-}
-
 .weave {
   content: "";
   background: url("images/weave.gif");
@@ -198,7 +182,7 @@ canvas {
 @media screen and (max-height: 900px) {
   canvas{
       margin-top: -80px;
-      padding-bottom: 82px;
+      margin-bottom: 164px;
 
   }
 }

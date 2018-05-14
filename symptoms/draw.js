@@ -98,6 +98,7 @@ var s = function(p) {
 
 // saves drawing into the database
   p.saveDrawing = function() {
+    alert("Thank you! Your drawing has been posted.");
     var ref = database.ref('drawings');
     var data = {
       // name: "Dan",

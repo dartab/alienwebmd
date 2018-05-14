@@ -285,3 +285,8 @@ button#clearButton:hover {
   color: #e9ef81;
   text-shadow: 0 0 10px #0000FF;
 }
+
+.container{
+  width: 20%;
+  height: 20%;
+}
