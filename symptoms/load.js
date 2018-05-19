@@ -137,7 +137,7 @@ function scrollStep() {
     if (window.pageYOffset === 0) {
         clearInterval(intervalId);
     }
-    window.scroll(0, window.pageYOffset - 100);
+    window.scroll(0, window.pageYOffset - 200);
 }
 
 function scrollToTop() {
