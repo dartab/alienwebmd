@@ -24,9 +24,11 @@ var s = function(p) {
   var drawing = [];
   var currentPath = [];
   var isDrawing = false;
+  var w = 500;
+  var h = 500;
 
   p.setup = function() {
-    canvas = p.createCanvas(500, 500);
+    canvas = p.createCanvas(w, h);
 
     canvas.mousePressed(p.startPath);
     canvas.parent('canvascontainer');
