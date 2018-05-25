@@ -15,9 +15,9 @@ database = firebase.database();
 document.addEventListener('touchstart', function(event) {
   event.preventDefault();
   // event.stopPropagation();
-},
-{passive: false}
-);
+}, {
+  passive: false
+});
 
 // empty canvas in which to draw
 var s = function(p) {
@@ -34,7 +34,7 @@ var s = function(p) {
     canvas.parent('canvascontainer');
     canvas.mouseReleased(endPath);
 
-    canvas.touchMoved( function() {
+    canvas.touchMoved(function() {
       // console.log("touchmoved");
       return false; // may not be necessary but probably won't hurt, consider on body or window?
     });
@@ -60,7 +60,7 @@ var s = function(p) {
   }
 
 
-//drawing function
+  //drawing function
   p.draw = function() {
     p.background(0);
 
@@ -71,6 +71,11 @@ var s = function(p) {
       }
       currentPath.push(point);
       p.print(currentPath.length, drawing.length, currentPath, drawing);
+
+      if ((p.mouseX >= 500) || (p.mouseX <= 0) || (p.mouseY >= 500) || (p.mouseY <= 0)) {
+        isDrawing = false;
+      }
+
     }
 
     p.stroke(255);
@@ -98,7 +103,7 @@ var s = function(p) {
   }
 
 
-// saves drawing into the database
+  // saves drawing into the database
   p.saveDrawing = function() {
     alert("Thank you! Your drawing has been posted.");
     var ref = database.ref('drawings');
@@ -115,7 +120,7 @@ var s = function(p) {
     drawing = [];
   }
 
-//puts drawings into the listing
+  //puts drawings into the listing
   p.gotData = function(data) {
 
     // clear the listing
